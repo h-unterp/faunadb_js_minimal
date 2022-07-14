@@ -15,8 +15,7 @@ const runMe = function () {
 };
 
 var client = new faunadb.Client({
-  secret: process.env.FAUNA_SECRET,
-  domain: "db.us.fauna.com",
+  secret: process.env.FAUNA_SECRET
 });
 
 client.query(runMe).then((response) => console.log(response));
