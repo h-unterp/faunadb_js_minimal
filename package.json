@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "faunadb": "^4.6.0"
+  },
+  "type": "module"
+}
