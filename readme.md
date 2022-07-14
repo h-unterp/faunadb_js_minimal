@@ -1,6 +1,6 @@
 #The bare minimum of a skeleton to test fuanadb with javascript
 
-set FAUNA_SECRET in `.env`
+set `FAUNA_SECRET` in `.env`
 ```
 npm install
 node main.js
