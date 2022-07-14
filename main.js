@@ -8,7 +8,7 @@ const runMe = function () {
     {
       thing1: 1,
     },
-    Second(Var("thing1"))
+    Var("thing1")
   );
 };
 
