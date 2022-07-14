@@ -3,22 +3,13 @@ import "dotenv/config";
 const q = faunadb.query;
 const { Let, Update, CreateFunction, Query, Do, Var, If, Exists, Lambda } = q;
 
-const Second = function (theArg) {
-  return Let(
-    {
-      thing1: "ok",
-    },
-    Var("thing1")
-  );
-};
-
 const LetItBe = function () {
   return Do(
     Let(
       {
         thing1: 1,
       },
-      Second(Var("thing1"))
+      Var("thing1")
     )
   );
 };
