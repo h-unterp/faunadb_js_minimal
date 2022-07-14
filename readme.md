@@ -6,3 +6,9 @@ node main.js
 ...or
 node function.js
 ```
+
+## main.js: 
+absolute bare minimum
+
+## function.js:
+bare minimum to test UDF's
