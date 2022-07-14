@@ -4,13 +4,11 @@ const q = faunadb.query;
 const { Let, Update, CreateFunction, Query, Do, Var, If, Exists, Lambda } = q;
 
 const LetItBe = function () {
-  return Do(
-    Let(
-      {
-        thing1: 1,
-      },
-      Var("thing1")
-    )
+  return Let(
+    {
+      thing1: 1,
+    },
+    Var("thing1")
   );
 };
 
@@ -29,6 +27,6 @@ const LetTest = CreateOrUpdateFunction({
 });
 
 var client = new faunadb.Client({
-  secret: process.env.FAUNA_SECRET
+  secret: process.env.FAUNA_SECRET,
 });
 client.query(LetTest).then((response) => console.log(response));
